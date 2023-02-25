@@ -1,30 +1,65 @@
 ---
-title: Home
+title: Overview
 layout: home
 ---
 
-Hello
+DCSServerBot is a tool written in [Python] to connect your [DCS] dedicated server with your [Discord] server.
+This connection is bi-directional. The bot is able to get informations from the DCS server (like the running mission, connected players etc.) and displays it on Discord as server status embeds.
+You are able to manage the DCS server with Discord bot commands to start and stop the server, change the password or the running mission and so on.
 
-If [Jekyll] is installed on your computer, you can also build and preview the created site *locally*. This lets you test changes before committing them, and avoids waiting for GitHub Pages.[^1] And you will be able to deploy your local build to a different platform than GitHub Pages.
+The tool has a plugin system, so it is easy to disable unwanted features. For developers it is easier to add new functionallity in the future.
+Developers are able to contribute to this project by adding their own plugins by using the well known GitHub pull-request workflow.
 
-More specifically, the created site:
+You can control which user is allowed to use a specific category of commands by assigning discord roles, which enables you to use RBAC (Role Base Aaccess Control).
 
-- uses a gem-based approach, i.e. uses a `Gemfile` and loads the `just-the-docs` gem
-- uses the [GitHub Pages / Actions workflow] to build and publish the site on GitHub Pages
+A scheduler is able to start, shutdown or restart your DCS server to specific date and/or times. Or to rotated your missions.
+Support for additional tools like [SRS], [TacView], [LotATC], [OvGME] etc. is included.
 
-Other than that, you're free to customize sites that you create with this template, however you like. You can easily change the versions of `just-the-docs` and Jekyll it uses, as well as adding further plugins.
+Included is a kick and ban system, with optional support for auto-kick and auto-ban for team kills and friendly fire.
+It can be combined with a credit system to earn credits for destroying targets or fullfill mission goals and a slot blocking system to reserve some slots for people with a specific amount of earned credits.
 
-[Browse our documentation][Just the Docs] to learn more about how to use this theme.
+A statistic system supports per-user, per-server and per-mission statistics and can be connected to a cloud-based statistics, which is shared by some of the most popular DCS online servers.
+To save this data the bot uses a [PostgreSQL] databse, which must be installed and mantainted.
+If you don't need statistics and search a smaller and easier to install solution, you might want to look at my [DCSServerBotLight], which can do some of the stuff you see in here already, without the need of any PostgreSQL-database.
 
-To get started with creating a site, just click "[use this template]"!
+GameMasters can control a running mission via bot commands by changing mission flags or variables, trigger scripts and send messages.
+They are also able to create and run campaigns.
 
-----
+You can enable a coalitions feature to support Blue and Red coalitions in your Discord and your PvP DCS server(s).
+This changes the way how the bot shows informations to avoid spionage of enemy coalition.
 
-[^1]: [It can take up to 10 minutes for changes to your site to publish after you push the changes to GitHub](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll#creating-your-site).
+It is possible to integrate the popular [FunkMan] Features GreenieBoard, Trapsheet and TargetRange.
 
-[Just the Docs]: https://just-the-docs.github.io/just-the-docs/
-[GitHub Pages]: https://docs.github.com/en/pages
-[README]: https://github.com/just-the-docs/just-the-docs-template/blob/main/README.md
-[Jekyll]: https://jekyllrb.com
-[GitHub Pages / Actions workflow]: https://github.blog/changelog/2022-07-27-github-pages-custom-github-actions-workflows-beta/
-[use this template]: https://github.com/just-the-docs/just-the-docs-template/generate
+This documentation will show you the main features, how to install and configure the bot and some more sophisticated stuff, e.g. if you run multiple servers, maybe even spread over multiple locations.
+
+# Feature list
+- Show status information of your server(s) in Discord
+- Manage your DCS server with Discord bot commands
+- Use Roles to define who is allowed to use a specific category of commands
+- Modular architecture with plugins
+- Per-user, per-mission and per-server statistic system
+- Optional connect to a cloud-based statistic system, shared with other DCS community servers
+- Scheduler to start, shutdown, restart the server and/or execute mission rotation
+- Support for [SRS], [TacView], [LotATC], [OvGME] etc.
+- Kick and ban people from DCS server and Discord
+- Enable auto-kick and auto-ban on your DCS server for team killing or friendly fire
+- Add a credit system to give players credits for killing targets or fullfill mission goals
+- Activate a slot blocking system, which can be combined with the credit system
+- Integrate [FunkMan]s GreenieBoard, Trapsheet and TargetRange
+- Auto update of the Bot (needs [Git])
+- GameMaster commands to change mission flags or variables, trigger scripts and send messages
+- Create, run and delete campains
+- Activate a coalition system to separate players and status informations based on coalition for PvP servers
+- Add custom commands to run scripts or executables on your Windows server
+
+[Python]: https://www.python.org/
+[DCS]: https://www.digitalcombatsimulator.com
+[Discord]: https://discord.com/
+[PostgreSQL]: https://www.postgresql.org/
+[DCSServerBotLight]: https://github.com/Special-K-s-Flightsim-Bots/DCSServerBotLight
+[SRS]: http://dcssimpleradio.com/
+[TacView]: https://www.tacview.net/
+[LotATC]: https://www.lotatc.com/
+[OvGME]: https://github.com/mguegan/ovgme
+[FunkMan]: https://github.com/funkyfranky/FunkMan
+[Git]: https://git-scm.com/download/win
