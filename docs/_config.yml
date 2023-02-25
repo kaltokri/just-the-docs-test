@@ -11,6 +11,24 @@ gh_edit_branch: main
 gh_edit_source: docs
 gh_edit_view_mode: edit
 
+callouts_level: quiet # or loud
+callouts:
+  highlight:
+    color: grey-dk
+  important:
+    title: Important
+    color: yellow
+  new:
+    title: New
+    color: grey-lt
+  note:
+    title: Note
+    color: green
+  warning:
+    title: Warning
+    color: red
+callouts_opacity: 0.6
+
 aux_links:
   GitHub: https://github.com/Special-K-s-Flightsim-Bots/DCSServerBot
   Discord: https://discord.gg/zjRateN
