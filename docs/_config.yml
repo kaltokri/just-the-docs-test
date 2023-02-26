@@ -17,7 +17,7 @@ callouts:
     color: grey-dk
   important:
     title: Important
-    color: yellow
+    color: red
   new:
     title: New
     color: grey-lt
@@ -26,8 +26,8 @@ callouts:
     color: green
   warning:
     title: Warning
-    color: red
-callouts_opacity: 0.6
+    color: yellow
+callouts_opacity: 0.4
 
 aux_links:
   GitHub: https://github.com/Special-K-s-Flightsim-Bots/DCSServerBot
