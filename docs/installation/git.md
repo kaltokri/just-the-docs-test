@@ -1,6 +1,7 @@
 ---
 title: Git
 parent: Installation
+nav_order: 1
 ---
 
 {: .note }

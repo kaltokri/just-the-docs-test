@@ -1,6 +1,7 @@
 ---
 title: PostgreSQL
 parent: Installation
+nav_order: 2
 ---
 
 DCSServerBot uses [PostgreSQL] to store all information that needs to be persisted, like players, mission information, statistics and so on.
