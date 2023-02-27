@@ -1,5 +1,5 @@
 ---
-title: Discord Server
+title: Prepare Discord Server
 parent: Installation
 nav_order: 5
 ---

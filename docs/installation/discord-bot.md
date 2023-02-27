@@ -1,5 +1,5 @@
 ---
-title: Discord Bot
+title: Create Discord Bot
 parent: Installation
 nav_order: 4
 ---
