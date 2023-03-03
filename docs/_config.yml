@@ -2,7 +2,7 @@ repository: kaltokri/just-the-docs-test
 title: DCSServerBot
 description: A Python tool tp connect DCS server with Discord!
 theme: just-the-docs
-color_scheme: dark
+color_scheme: dcsserverbot
 
 gh_edit_link: true
 gh_edit_link_text: "Edit this page on GitHub"
