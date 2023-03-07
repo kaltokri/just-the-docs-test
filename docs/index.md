@@ -26,7 +26,7 @@ If you don't need statistics and search a smaller and easier to install solution
 GameMasters can control a running mission via bot commands by changing mission flags or variables, trigger scripts and send messages.
 They are also able to create and run campaigns.
 
-You can enable a coalitions feature to support Blue and Red coalitions in your Discord and your PvP DCS server(s).
+You can enable a [coalitions] feature to support Blue and Red coalitions in your Discord and your PvP DCS server(s).
 This changes the way how the bot shows informations to avoid spionage of enemy coalition.
 
 It is possible to integrate the popular [FunkMan] Features GreenieBoard, Trapsheet and TargetRange.
@@ -64,3 +64,4 @@ This documentation will show you the main features, how to install and configure
 [OvGME]: https://github.com/mguegan/ovgme
 [FunkMan]: https://github.com/funkyfranky/FunkMan
 [Git]: https://git-scm.com/download/win
+[coalitions]: /configuration/coalitions
