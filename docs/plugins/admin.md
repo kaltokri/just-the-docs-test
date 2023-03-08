@@ -1,8 +1,10 @@
 ---
-title: Plugin "Admin"
+title: Admin
 parent: Plugin System
 nav_order: 0
 ---
+
+# Plugin "Admin"
 
 This plugin supports administrative commands that are needed to operate a DCS server remotely.
 
@@ -88,7 +90,9 @@ the dedicated plugin will be reloaded or the bot will be restarted (security que
 dcsserverbot.ini. **All changes will happen on the bot that is controlling the server of that admin channel!**
 
 ## Tables
+
 ### Bans
+
 | Column    | Type                             | Description                                          |
 |-----------|----------------------------------|------------------------------------------------------|
 | #ucid     | TEXT NOT NULL                    | Unique ID of this player. FK to the players table.   |

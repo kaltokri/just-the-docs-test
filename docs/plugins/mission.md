@@ -1,18 +1,22 @@
 ---
-title: Plugin "Mission"
+title: Mission
 parent: Plugin System
 nav_order: 0
 ---
+
+# Plugin "Mission"
 
 The mission plugin adds commands for amending the mission list, persistent mission- and player-embeds to be displayed 
 in your status channels and ATIS like information for the missions' airports. 
 
 ## Uploading of Missions
+
 You can upload .miz files in the configured admin channel of your server(s). You need the DCS Admin role for that.
 Existing missions will be replaced (with security question) and if the server is running with that mission, it will be
 restarted (another security question will apply). Newly added missions will be auto-added to the mission list.
 
 ## Auto-Scanning
+
 If you set _AUTOSCAN = true_ n your BOT section of dcsserverbot.ini, all miz files that were added into the Missions
 folder of your DCS-server (for instance via a Google Drive) will be auto-added to your mission list.
 
@@ -34,7 +38,9 @@ folder of your DCS-server (for instance via a Google Drive) will be auto-added t
 | .atis / .weather | Airport Name             | all                         | DCS                   | Information about a specific airport in this mission (incl. weather).                                                    |
 
 ## Tables
+
 ### Players
+
 | Column          | Type                  | Description                                              |
 |-----------------|-----------------------|----------------------------------------------------------|
 | #ucid           | TEXT                  | Unique ID of this user (DCS ID).                         |
@@ -47,6 +53,7 @@ folder of your DCS-server (for instance via a Google Drive) will be auto-added t
 | last_seen       | TIMESTAMP             | Time the user was last seen on the DCS servers.          |
 
 ### Players_Hist
+
 This table keeps a history of all changes to the main player table.
 
 | Column     | Type                    | Description                                              |
@@ -61,6 +68,7 @@ This table keeps a history of all changes to the main player table.
 | time       | TIMESTAMP DEFAULT NOW() | Time of the change.                                      |
 
 ### Missions
+
 | Column          | Type               | Description                                     |
 |-----------------|--------------------|-------------------------------------------------|
 | #id             | SERIAL             | Auto-incrementing unique mission ID.            |

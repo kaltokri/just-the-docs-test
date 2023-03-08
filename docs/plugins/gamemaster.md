@@ -1,8 +1,10 @@
 ---
-title: Plugin "GameMaster"
+title: GameMaster
 parent: Plugin System
 nav_order: 0
 ---
+
+# Plugin "GameMaster"
 
 The gamemaster plugin adds commands that help you to interact with a running mission by either different kinds of 
 messaging or setting and clearing flags. You can enable the campaign system in here, too, that can be used in different
@@ -28,6 +30,7 @@ other plugins, like Slotblocking or Userstats.
 *) DCS 2.7.12 or higher
 
 ## Usage inside of Missions (Scripting API)
+
 You can enable, disable (= delete) and reset (= delete + start) the plugin base slot blocking system (aka campaigns) 
 inside of missions, too. If you want to use the system and for instance reset it on every mission start, you just need 
 to put in the following lines in one of your triggers that fire after a mission load:
@@ -41,7 +44,9 @@ This can for instance be used for some arena based game, which should start all 
 A campaign name of "_internal_" will be used in that case.
 
 ## Tables
+
 ### CAMPAIGNS
+
 | Column      | Type                    | Description                                     |
 |-------------|-------------------------|-------------------------------------------------|
 | #id         | SERIAL                  | Auto-incrementing unique ID of this campaign.   |
@@ -52,6 +57,7 @@ A campaign name of "_internal_" will be used in that case.
 | stop        | TIMESTAMP               | When will the campaign stop.                    |
 
 ### COALITIONS
+
 | Column          | Type                    | Description                                     |
 |-----------------|-------------------------|-------------------------------------------------|
 | #server_name    | TEXT NOT NULL           | The respective server name.                     |

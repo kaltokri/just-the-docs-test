@@ -1,8 +1,10 @@
 ---
-title: Plugin "DBExporter"
+title: DBExporter
 parent: Plugin System
 nav_order: 0
 ---
+
+# Plugin "DBExporter"
 
 This plugin will dump the whole DCSServerBot database every hour to ./export/_tablename_.json files for further processing, if needed.
 

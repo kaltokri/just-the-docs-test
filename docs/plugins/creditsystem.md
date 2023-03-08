@@ -1,8 +1,10 @@
 ---
-title: Plugin "CreditSystem"
+title: CreditSystem
 parent: Plugin System
 nav_order: 0
 ---
+
+# Plugin "CreditSystem"
 
 This plugin adds credits to the bot. People can gain credits atm by killing stuff. It is planned to enhance this 
 further, by gaining credits by flighttimes, etc.<br/>
@@ -70,6 +72,7 @@ If you want to specify points for ground targets, you need to select the correct
 
 
 ## Discord Commands
+
 | Command  | Parameter          | Role | Description                                           |
 |----------|--------------------|------|-------------------------------------------------------|
 | .credits |                    | DCS  | Displays the players campaign credits.                |
@@ -84,7 +87,9 @@ If you want to change user points based on any mission achievements, you are goo
 ```
 
 ## Tables
+
 ### CREDITS
+
 | Column       | Type                       | Description                       |
 |--------------|----------------------------|-----------------------------------|
 | #campaign_id | SERIAL                     | ID of this campaign.              |

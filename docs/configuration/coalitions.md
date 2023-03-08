@@ -3,7 +3,7 @@ title: Coalitions
 parent: Configuration
 nav_order: 3
 ---
-
+{{ page.path }}
 # Coalitions
 
 If you want to support Blue and Red coalitions in your Discord and your DCS servers, you're good to go!

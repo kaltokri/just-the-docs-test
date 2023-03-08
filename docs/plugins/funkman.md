@@ -1,8 +1,10 @@
 ---
-title: Plugin "FunkMan"
+title: FunkMan
 parent: Plugin System
 nav_order: 0
 ---
+
+# Plugin "FunkMan"
 
 This plugin adds support for the Moose Funkman protocol. You need to install 
 [FunkMan](https://github.com/funkyfranky/FunkMan) for it to work.<br/>

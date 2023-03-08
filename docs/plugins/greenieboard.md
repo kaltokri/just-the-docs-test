@@ -1,8 +1,10 @@
 ---
-title: Plugin "Greenieboard"
+title: Greenieboard
 parent: Plugin System
 nav_order: 0
 ---
+
+# Plugin "Greenieboard"
 
 This plugin allows you to have a (optional: persistent) greenieboard for the top x (default: 10) players and to give 
 players the opportunity to analyse their last carrier landings.

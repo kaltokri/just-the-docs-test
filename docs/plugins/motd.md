@@ -1,8 +1,10 @@
 ---
-title: Plugin "MOTD"
+title: MOTD
 parent: Plugin System
 nav_order: 0
 ---
+
+# Plugin "MOTD"
 
 This plugin adds a message of the day to the server, that is displayed either on join or when you hop into a plane.
 

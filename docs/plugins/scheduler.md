@@ -1,8 +1,10 @@
 ---
-title: Plugin "Scheduler"
+title: Scheduler
 parent: Plugin System
 nav_order: 0
 ---
+
+# Plugin "Scheduler"
 
 With this plugin you can decide when to run your DCS servers, when to run which mission and how long a specific mission 
 shall run, either in local time or in mission time. Tasks that can be achieved with this solution are below others:
@@ -123,6 +125,7 @@ Examples:
 | text            | A customizable message that will be sent to the users when a restart is pending.<br/>{item} will be replaced with either "server" or "mission", depending on what's happening.<br/>{what} will be replaced with what is happening (restart, shutdown, rotate)<br/>{when} will be replaced with the time to wait. |
 
 ### Section "preset"
+
 Weather presets can be combined by comma separating them in the appropriate server configuration. You can either create
 full-fledged weather presets already and load them later or you combine them like in the example above. 
 
@@ -147,6 +150,7 @@ full-fledged weather presets already and load them later or you combine them lik
 
 If you have **lots** of presets and you don't want to have them in your scheduler.json because it will get messy, you 
 can put them in a separate json file like so:
+
 ```json
 {
   "configs": [
@@ -164,6 +168,7 @@ can put them in a separate json file like so:
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Timeframe, with start and end-time in either HH24 or HH24:MM format.<br/>If only one time is provided, the action (see second parameter) has to happen at exactly this time.                                            | The second parameter contains a character for every day, starting Mo and ending Su. Depending on the character, the behaviour will be selected:<br/>Y, N or P - the server should run in that timeframe (Y) or not (N). P means, it should only run, if populated. |
 | __Examples:__<br/>Time between 12:30h and 18:00h => 12:30-18:00<br/>Time between 09:00h and 21:30h => 09-21:30<br/>Time between 21:00h and 03:00h => 21-03 (next day!)<br/>All day long (00:00h - 24:00h) => 00-24<br/> | __Examples:__<br/>YYYYYYY => every day<br/>YYYYYNN => weekdays only<br/>&nbsp;<br/>&nbsp;                                                                                                                                                                          |
+
 See the above examples for a better understanding on how it works.
 
 ### Section "extensions"

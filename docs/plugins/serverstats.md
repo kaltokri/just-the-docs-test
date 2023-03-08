@@ -1,8 +1,10 @@
 ---
-title: Plugin "ServerStats"
+title: ServerStats
 parent: Plugin System
 nav_order: 0
 ---
+
+# Plugin "ServerStats"
 
 If you enable this plugin you will gather statistics for your DCS servers.<br/>
 

@@ -1,8 +1,10 @@
 ---
-title: Plugin "OvGME"
+title: OvGME
 parent: Plugin System
 nav_order: 0
 ---
+
+# Plugin "OvGME"
 
 This plugin lets you install additional packages (aka mods) into your DCS World servers.</br>
 The plugin creates backup of files that have been replaced by the mod. Install, update and uninstallation is supported.
@@ -52,12 +54,15 @@ be unpacked over either the Saved Games\DCS(...) folder or over the DCS World in
 ### Backups
 Every installed package creates a backup folder. This is stored below the directory provided in the configuration
 ("SavedGames" or "RootFolder").<br/>
-The backup will be found in<p> 
-.(instance_name)<br/>
-|_ (package)_v(version)<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|_install.log<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|_ ...
-<p>
+The backup will be found in
+
+```
+.(instance_name)
+|_ (package)_v(version)
+    |_install.log<
+    |_ ...
+```
+
 install.log contains a detailed log about every file that has been installed into the DCS World directories.<br/>
 Besides that, the folder contains all files that are being overwritten by the package on installation for a later 
 restore.

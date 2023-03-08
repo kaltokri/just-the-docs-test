@@ -1,13 +1,16 @@
 ---
-title: Plugin "Punishment"
+title: Punishment
 parent: Plugin System
 nav_order: 0
 ---
+
+# Plugin "Punishment"
 
 The DCSServerBot auto-ban, auto-kick, auto-move-back-to-spectators module, based on the players behaviour and the configuration described in here.
 The ideas of this plugin are based on [Slmod](https://github.com/mrSkortch/DCS-SLmod). Thanks to Speed for his awesome solution!
 
 ## Configuration
+
 The punishment is configured with a file named config\punishment.json. You'll find a sample file in that directory:
 ```json
 {
@@ -53,7 +56,9 @@ The punishment is configured with a file named config\punishment.json. You'll fi
   ]
 }
 ```
+
 ### Penalties
+
 The number of penalty points that a player "earns", is configured here. Collisions are hits where the players aircraft is being used as a weapon.
 You can add own events that you can use from inside the mission environment (see below), like the example here with "zone-bombing".<br/>
 If you use the inline "action"-element, you can already trigger any action like a "move_to_spec" or "credits" when someone
@@ -62,6 +67,7 @@ FFs or kills a team member.
 **ATTENTION:** Multiple events, that happen inbetween a minute, are calculated as a single event. This is on purpose, to avoid too many punishments when a user unintentionally dropped a CBU onto something.
 
 ### Punishments
+
 Each point level can trigger a specific action. When the user hits this limit by gathering penalties, the specific action is being triggered.
 Actions are triggered at least every minute. So there might be a slight delay in being a bad pilot and getting punished. That allows victims to -forgive the dedicated act.
 A ban is temporary and punishment points can decay over time (see below).<br/>
@@ -70,19 +76,24 @@ away credit points from players if they misbehave. You need to have "creditsyste
 use it.
 
 ### Exemptions
+
 User that should not be punished. Can be either ucids or discord groups.
 
 ### Forgive
+
 To prevent actions to be executed against an initiator, victims can use the -forgive command inside the in-game chat.
 This will delete the punishments to this user that are not executed already and delete the events from this specific occasion.
 
 ### Unban
+
 Auto-unban when the user reached <= this amount of points.
 
 ### Weight per Flighthours
+
 Weight punishment by flight hours. This will be the sum of flight hours over all servers handled by this bot.
 
 ### Decay
+
 Penalty points will decrease over time. This is configured here.
 Decay can only be configured once, so there is no need for a server specific configuration. All other elements can be configured for every server instance differently.
 
@@ -94,6 +105,7 @@ Decay can only be configured once, so there is no need for a server specific con
 | .penalty | [member] / [ucid] | all     | DCS       | Displays the players penalty points.                   |
 
 ## How to use the penalty system inside of missions
+
 To use the penalty system inside of missions, you can use the commands
 ```lua
 --[[
@@ -114,7 +126,9 @@ Following the example above, a possible call could be:
 ```
 
 ## Tables
+
 ### pu_events
+
 | Column      | Type                             | Description                                                         |
 |-------------|----------------------------------|---------------------------------------------------------------------|
 | #id         | SERIAL                           | Auto-incrementing unique ID of this column.                         |

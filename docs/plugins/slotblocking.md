@@ -1,8 +1,10 @@
 ---
-title: Plugin "SlotBlocking"
+title: SlotBlocking
 parent: Plugin System
 nav_order: 0
 ---
+
+# Plugin "SlotBlocking"
 
 This is a simple slot blocking plugin that can be used in two different ways (for now, more to come).
 Slots can be either blocked by Discord groups (specific planes blocked for Discord Members, other ones blocked for 

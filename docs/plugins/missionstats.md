@@ -1,18 +1,22 @@
 ---
-title: Plugin "MissionStats"
+title: MissionStats
 parent: Plugin System
 nav_order: 0
 ---
+
+# Plugin "MissionStats"
 
 When enabled, this plugin will generate a persistent mission statistics embed to be displayed in the status channels and 
 detailed statistics from the in-game event system. The global DCSServerBot.lua and a plugin specific mission.lua will 
 automatically be loaded into any mission running on that specific server.
 
 ## Configuration
+
 Mission statistics can be enabled or disabled in the server configuration (see [e) Server Specific Sections](../../README.md)).
 Missionstats needs the Userstats plugin to be loaded first.
 
 ## How to disable Missionstats inside of missions
+
 To disable mission statistics for a specific mission, you can use the following piece of code somewhere in your mission 
 (not in an on-startup trigger, but shortly after).
 ```lua
@@ -20,6 +24,7 @@ To disable mission statistics for a specific mission, you can use the following 
 ```
 
 ## Discord Commands
+
 **Attention:** These commands need MISSION_STATISTICS=true in the server you want to run the commands on!
 
 
@@ -33,7 +38,9 @@ To disable mission statistics for a specific mission, you can use the following 
 **Attention:** "period" can either be a period [day, week, month, year] or a campaign name!
 
 ## Tables
+
 ### Missionstats
+
 | Column      | Type                             | Description                                                                            |
 |-------------|----------------------------------|----------------------------------------------------------------------------------------|
 | #id         | SERIAL                           | Auto-incrementing unique ID of this column.                                            |
