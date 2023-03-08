@@ -10,10 +10,12 @@ DCSServerBot comes with a built-in, database driven statistics system. It allows
 For server owners, it allows you to see which of your servers and missions are being used most, at which time and from which kind of users (Discord members vs. public players).
 
 ## Configuration
+
 User statistics can be enabled or disabled in the server configuration (see [e) Server Specific Sections](../../README.md)).
 Userstats needs the Mission plugin to be loaded first.
 
 ## User Linking
+
 It is recommended that your users link their Discord ID to their UCID (DCS World ID). The bot can try to do that by 
 itself (AUTOMATCH = true), but might fail, especially, when the in-game names and Discord names of users differ a lot.
 If the AUTOMATCH is disabled or was not successful, users can generate a unique TOKEN that is being sent as a DM with 
@@ -39,6 +41,7 @@ If a campaign is active on your server, .stats and .highscore will display the d
 the "all" period.
 
 ## Reports
+
 This plugin comes with 3 custom reports where 2 of them are available in two different shapes.
 * userstats.json
 * userstats.campaign.json (for campaign statisics)
@@ -49,15 +52,19 @@ This plugin comes with 3 custom reports where 2 of them are available in two dif
 All templates can be amended if copied into /reports/userstats.
 
 ## How to disable Userstats inside of missions
+
 Sometimes you don't want your mission to generate per-user statistics, but you don't want to configure your server to disable them forever?
 Well, then - just disable them from inside your mission:
+
 ```lua
   dofile(lfs.writedir() .. 'Scripts/net/DCSServerBot/DCSServerBot.lua')
   dcsbot.disableUserStats()
 ```
 
 ## Tables
+
 ### Statistics
+
 | Column             | Type                | Description                                                                                                                   |
 |--------------------|---------------------|-------------------------------------------------------------------------------------------------------------------------------|
 | #mission_id        | INTEGER NOT NULL    | Unique ID of this mission. FK to the missions table.                                                                          |

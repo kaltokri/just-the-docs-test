@@ -9,6 +9,7 @@ nav_order: 0
 If you enable this plugin you will gather statistics for your DCS servers.<br/>
 
 ## Configuration
+
 n/a
 
 ## Discord Commands
@@ -19,7 +20,9 @@ n/a
 | .serverload  | [hour/day/week] [-all]  | Admin | Displays technical server statistics, like CPU load, memory consumption, etc.<br/>If -all is provided, you can cycle through all your server nodes.     |
 
 ## Tables
+
 ### Serverstats
+
 | Column      | Type                             | Description                                          |
 |-------------|----------------------------------|------------------------------------------------------|
 | #id         | SERIAL                           | Auto-incrementing unique ID of this column.          |
