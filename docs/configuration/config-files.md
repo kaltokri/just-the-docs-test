@@ -1,13 +1,14 @@
 ---
+title: Sample Files
 parent: Configuration
 nav_order: 1
 ---
 
-# Configuration Samples
+# Configuration Sample Files
 In the subfolder `samples`, you'll find some configuration-file samples for the bot and the different available plugins.
 
 ## dcsserverbot.ini
-This sample can be used as a starting point, when you create your own dcsserverbot.ini file.<br/>
+This sample can be used as a starting point, when you create your own dcsserverbot.ini file.
 It is a basic configuration for a dedicated server setup with two dedicated servers being configured to be used with
 the bot. The first instance is the default instance, the 2nd instance is named "instance2". This is what you provide
 with -w to the dcs.exe process or how your Saved Games folder is named. 
@@ -32,7 +33,7 @@ your Discord members to be banned, kicked or whatnot.
 
 ## scheduler.json
 The scheduler is a very powerful and thus complex plugin. I tried to pack in as much information that was possible into
-the sample, but you might want to look into the [README](../plugins/scheduler/README.md) as well.
+the sample, but you might want to look into the [plugin documentation] as well.
 
 ### Default-Section
 Contains the "warn schedule", meaning at which amount of seconds before a restart / shutdown happens, the users should 
@@ -62,6 +63,7 @@ preset will be picked out of the provided list ("Winter Daytime", "Summer Daytim
 Another powerful plugin is the Slotblocking. The sample shows a default configuration, which is valid for every server.
 In our case, we restrict the Combined Arms slots to people that are members of your Discord and that carry the Donators
 role.
+
 The example for "DCS.openbeta_server" shows the point-based slotblocking system. People can earn points when killing 
 specific targets (see list). On the other hand, slots can be blocked until a specific amount of points has been reached
 by that user ("points"). The "costs" determine, what happens to the users points when he uses this plane.
@@ -74,3 +76,5 @@ the example.
 With the OvGME plugin you can install OvGME like packages automatically into your DCS servers. The sample shows two
 possible ways, by either providing a strict version (2.0.1) or by using the term "latest", to get the latest available
 version that is provided in one of the installation directories.
+
+[plugin documentation]: {% link plugins/scheduler.md %}
