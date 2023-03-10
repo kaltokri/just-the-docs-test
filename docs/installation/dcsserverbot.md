@@ -1,5 +1,5 @@
 ---
-title: DcsServerBot
+title: DCSServerBot
 parent: Installation
 nav_order: 6
 ---
@@ -11,7 +11,7 @@ You have two options to download the bot:
 - Download a zip file
 
 If you want to use the auto update feature you must use git clone:
-- Open a git bash in the perent folder, where you want to place the DcsServerBot folder and run this command:
+- Open a git bash in the perent folder, where you want to place the DCSServerBot folder and run this command:
 `git clone https://github.com/Special-K-s-Flightsim-Bots/DCSServerBot.git`
 - The folder DCSServerBot will be created automatically and all files will be cloned into this folder
 

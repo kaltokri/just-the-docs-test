@@ -9,7 +9,7 @@ nav_order: 4
 The bot needs a unique Token for each installation:
 - Open the website [Discord for Developers]
 - Click on the button `New Application`
-- Give it a Name, e.g. **DcsServerBot**
+- Give it a Name, e.g. **DCSServerBot**
 - Agree the Terms of Service
 - Click on the button `Create`
 

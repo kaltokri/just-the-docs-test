@@ -7,7 +7,7 @@ nav_order: 1
 {: .note }
 > The installation of Git is optional.
 
-If you install Git and clone the DcsServerBot repository from GitHub onto your harddisk, the autoupdate will work out of the box.
+If you install Git and clone the DCSServerBot repository from GitHub onto your harddisk, the autoupdate will work out of the box.
 You must ensure, that the `git.exe` is in your `PATH` environment variable.
 
 Just download it from [git-scm.com] and install it with default settings.
