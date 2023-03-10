@@ -65,7 +65,7 @@ in your EventListener implementation.
 **__Attention:__**<br/>
 The default configuration will be merged with the respective server specific configuration, giving the
 server specific configuration the priority over the default. If you don't want it like that, you need to
-overwrite the `get_config()` method in your own plugin configuration (see [punishment](./punishment/commands.py)).
+overwrite the `get_config()` method in your own plugin configuration (see [Punishment]).
 
 
 ## Classes
@@ -74,7 +74,8 @@ When implementing a plugin, there are some python classes that you need to know.
 
 ### Class: Plugin
 
-Base class for all plugins. Needs to be implemented inside the commands.py file (see below).<br/>
+Base class for all plugins. Needs to be implemented inside the commands.py file (see below).
+
 You have access to the following class variables:
 * self.plugin_name: Plugin name ("sample")
 * self.plugin_version: Plugin version ("1.0")
@@ -215,7 +216,7 @@ serving a bunch of DCS servers, you might end up with more than one active bot i
 them, commands are usually called in the admin channels of each server (see examples below).
 Sometimes commands needs to query the whole database or must only be run on exactly one instance, the 
 so-called MASTER instance. For this case, you already need to take care of the MASTER / AGENT split in your
-Discord hook. For how to handle Discord commands, see [discord.py](https://discordpy.readthedocs.io/en/stable/).
+Discord hook. For how to handle Discord commands, see [discord.py].
 
 ```python
 import platform
@@ -330,10 +331,10 @@ provides classes to do so.
 
 ### Server
 
-See [server.py](../core/data/server.py).<br/>
-You have usually two options to retrieve the running server instance:
+See `server.py`. You have usually two options to retrieve the running server instance:
 
-a) Plugin<br/>
+a) Plugin
+
 In your plugins, you usually want to run a Discord command that sends information to a specific server.
 To get the respective server, you can take advantage of the channel/server mapping that DCSServerBot 
 implements in its configuration already. That means, that if you for instance run a command in the
@@ -345,7 +346,8 @@ async def sample(self, ctx, text: str):
     server: Server = await self.bot.get_server(ctx)
 ```
 
-b) EventListener<br/>
+b) EventListener
+
 In your EventListener, you receive commands from a DCS server. And sure - that server tells you its name
 with every command it sends to you:
 
@@ -356,7 +358,7 @@ async def onChatCommand(self, data: dict) -> None:
 
 ### Mission
 
-The running [mission](../core/data/mission.py) can be accessed through the Server instance like so:
+The running mission (`mission.py`) can be accessed through the Server instance like so:
 
 ```python
 mission: Mission = server.current_mission
@@ -364,7 +366,7 @@ mission: Mission = server.current_mission
 
 ### Player
 
-There are several ways to access a [player](../core/data/player.py):
+There are several ways to access a player (`player.py`):
 * by their UCID
 * by their Discord ID (if they are a Discord member and properly mapped)
 * by their in-game ID (1, 2, 3, ...)
@@ -394,11 +396,11 @@ async def onChatCommand(self, data: dict) -> None:
 
 ## Reports
 
-See [Report Framework](../reports/README.md).
+See [Report Framework].
 
 ## Versioning
 
-Every plugin has its own version. Versioning starts with a file named version.py like so:</br>
+Every plugin has its own version. Versioning starts with a file named version.py like so:
 
 _version.py:_
 ```python
@@ -412,7 +414,7 @@ a must.
 
 DCSServerBot uses a PostgreSQL database to hold all tables, stored procedures and whatnot. Every plugin can
 create its own database elements. To do so, you need to add the DDL, line by line in a file named tables.sql 
-below the optional "db" directory.<br/>
+below the optional "db" directory.
 
 _tables.sql:_
 ```sql
@@ -462,3 +464,7 @@ Each Plugin can implement the method
         pass
 ```
 that will take care of anything that needs to be done when migrating **TO** version _version_. 
+
+[Punishment]: {% link plugins/punishment.md %}
+[discord.py]: https://discordpy.readthedocs.io/en/stable/
+[Report Framework]: {% link reports/index.md %}

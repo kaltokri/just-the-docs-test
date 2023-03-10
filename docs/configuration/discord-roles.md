@@ -15,6 +15,8 @@ configuration file. If you want to add multiple groups, separate them by comma (
 | DCS            | People with this role are allowed to chat, check their statistics and gather information about running missions and players.                        |
 | DCS Admin      | People with this role are allowed to restart missions, managing the mission list, ban and unban people.                                             |
 | Admin          | People with this role are allowed to manage the server, start it up, shut it down, update it, change the password and gather the server statistics. |
-| GameMaster     | People with this role can see both [coalitions](./COALITIONS.md) and run specific commands that are helpful in missions.                            |
-| Coalition Blue | People with this role are members of the blue coalition (see [Coalitions](./COALITIONS.md)).                                                        |
-| Coalition Red  | People with this role are members of the red coalition (see [Coalitions](./COALITIONS.md)).                                                         |
+| GameMaster     | People with this role can see both [Coalitions] and run specific commands that are helpful in missions.                                             |
+| Coalition Blue | People with this role are members of the blue coalition (see [Coalitions]).                                                                         |
+| Coalition Red  | People with this role are members of the red coalition (see [Coalitions]).                                                                          |
+
+[Coalition]: {% link configuration/coalitions.md %}

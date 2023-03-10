@@ -7,11 +7,12 @@ nav_order: 0
 # Plugin "Punishment"
 
 The DCSServerBot auto-ban, auto-kick, auto-move-back-to-spectators module, based on the players behaviour and the configuration described in here.
-The ideas of this plugin are based on [Slmod](https://github.com/mrSkortch/DCS-SLmod). Thanks to Speed for his awesome solution!
+The ideas of this plugin are based on [SLMod]. Thanks to Speed for his awesome solution!
 
 ## Configuration
 
-The punishment is configured with a file named config\punishment.json. You'll find a sample file in that directory:
+The punishment is configured with a file named `config\punishment.json`. You'll find a sample file in that directory:
+
 ```json
 {
   "configs": [
@@ -60,7 +61,8 @@ The punishment is configured with a file named config\punishment.json. You'll fi
 ### Penalties
 
 The number of penalty points that a player "earns", is configured here. Collisions are hits where the players aircraft is being used as a weapon.
-You can add own events that you can use from inside the mission environment (see below), like the example here with "zone-bombing".<br/>
+You can add own events that you can use from inside the mission environment (see below), like the example here with "zone-bombing".
+
 If you use the inline "action"-element, you can already trigger any action like a "move_to_spec" or "credits" when someone
 FFs or kills a team member.
 
@@ -70,8 +72,9 @@ FFs or kills a team member.
 
 Each point level can trigger a specific action. When the user hits this limit by gathering penalties, the specific action is being triggered.
 Actions are triggered at least every minute. So there might be a slight delay in being a bad pilot and getting punished. That allows victims to -forgive the dedicated act.
-A ban is temporary and punishment points can decay over time (see below).<br/>
-In conjunction with the [CreditSystem](../creditsystem/README.md) plugin, you can use "credits" as a punishment and take
+A ban is temporary and punishment points can decay over time (see below).
+
+In conjunction with the [CreditSystem] plugin, you can use "credits" as a punishment and take
 away credit points from players if they misbehave. You need to have "creditsystem" added to your OPT_PLUGINS though to
 use it.
 
@@ -139,3 +142,6 @@ Following the example above, a possible call could be:
 | points      | DECIMAL NOT NULL                 | The points for this event (changes during decay runs).              |
 | time        | TIMESTAMP NOT NULL DEFAULT NOW() | The time the event occurred.                                        |
 | decay_run   | INTEGER NOT NULL DEFAULT -1      | The decay runs that were processed on this line already.            |
+
+[SLMod]: https://github.com/mrSkortch/DCS-SLmod
+[CreditSystem]: {% link plugins/creditsystem.md %}

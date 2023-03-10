@@ -11,7 +11,7 @@ For server owners, it allows you to see which of your servers and missions are b
 
 ## Configuration
 
-User statistics can be enabled or disabled in the server configuration (see [e) Server Specific Sections](../../README.md)).
+User statistics can be enabled or disabled in the server configuration (see `dcsserverbot.ini` [Server Specific Sections]).
 Userstats needs the Mission plugin to be loaded first.
 
 ## User Linking
@@ -92,3 +92,5 @@ Well, then - just disable them from inside your mission:
 | landings           | INTEGER DEFAULT 0   | Number of landings. Subsequent landings inbetween one minute are counted as one landing (workaround DCS bug).                 |
 | #hop_on            | TIMESTAMP NOT NULL  | Time the player occupied this unit.                                                                                           |
 | hop_off            | TIMESTAMP           | Time, the player left this unit or the server.                                                                                |
+
+[Server Specific Sections]: {% link configuration/dcsserverbot-ini.md %}

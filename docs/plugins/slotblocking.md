@@ -8,7 +8,7 @@ nav_order: 0
 
 This is a simple slot blocking plugin that can be used in two different ways (for now, more to come).
 Slots can be either blocked by Discord groups (specific planes blocked for Discord Members, other ones blocked for 
-Donators for instance) or by credit points (see [CreditSystem](../creditsystem/README.md)) that people earn by kills. 
+Donators for instance) or by credit points (see [CreditSystem]) that people earn by kills. 
 So you can hop in another plane, as soon as you have killed a specific number of enemies. Friendly fire or self kills 
 are not counted._
 
@@ -45,15 +45,19 @@ The slot blocking is configured with a file named config\slotblocking.json. You'
   ]
 }
 ```
-Each unit can be either defined by its "group_name" or "unit_name", which are substrings/[pattern](https://riptutorial.com/lua/example/20315/lua-pattern-matching) of the used names in your mission or by its "unit_type".
+
+Each unit can be either defined by its "group_name" or "unit_name", which are substrings/[pattern] of the used names in your mission or by its "unit_type".
 The restriction can either be "points" that you gain by kills or "discord", which is then a specific Discord role (in the example "Donators").
 "costs" are the points you lose when you get killed in this specific aircraft and if provided.
 
 ## Sample Use Case
+
 Here are some sample use cases that show how the plugin can be used.
+
 ### One Life per User 
-You die, you can't hop in again.<p>
-slotblocking.json:
+
+You die, you can't hop in again, `slotblocking.json`:
+
 ```json
 {
   "configs": [
@@ -66,7 +70,8 @@ slotblocking.json:
 }
 ```
 
-creditsystem.json:
+`creditsystem.json`:
+
 ```json
 {
   "configs": [
@@ -81,7 +86,9 @@ creditsystem.json:
 ```
 
 ### One Life per User (get new lifes per pvp kills)
-slotblocking.json:
+
+`slotblocking.json`:
+
 ```json
 {
   "configs": [
@@ -93,7 +100,9 @@ slotblocking.json:
   ]
 }
 ```
-creditsystem.json:
+
+`creditsystem.json`:
+
 ```json
 {
   "configs": [
@@ -109,9 +118,12 @@ creditsystem.json:
 ```
 
 ### One Life per User (hard version)
+
 Life will be taken if you hop in your plane already. You get it back, if you land properly on another airport, only then
-you can select another slot.<p>
-slotblocking.json:
+you can select another slot.
+
+`slotblocking.json`:
+
 ```json
 {
   "configs": [
@@ -124,7 +136,9 @@ slotblocking.json:
   ]
 }
 ```
-creditsystem.json:
+
+`creditsystem.json`:
+
 ```json
 {
   "configs": [
@@ -137,3 +151,6 @@ creditsystem.json:
   ]
 }
 ```
+
+[CreditSystem]: {% link plugins/creditsystem.md %}
+[pattern]: https://riptutorial.com/lua/example/20315/lua-pattern-matching

@@ -68,7 +68,7 @@ The following parameters can be used to configure the bot:
 | TAG_FILTER     | Many groups have their own tag, that might make it difficult for the bot to match usernames. The usual tags like [Tag], =Tag= or similar ones, are supported already. If you see matching issues, you might want to try this one. |
 | SERVER_FILTER  | Filter to shorten server names (if needed)                                                                                                                                                                                        |
 | MISSION_FILTER | Filter to shorten mission names (if needed)                                                                                                                                                                                       |
-| EVENT_FILTER   | Filter events from the missionstats plugin (optional).<br/>See [here](https://wiki.hoggitworld.com/view/DCS_singleton_world) for a complete list of events.                                                                       |
+| EVENT_FILTER   | Filter events from the missionstats plugin (optional).<br/>See [DCS_singleton] for a complete list of events.                                                                                                                     |
 
 # Section \[REPORTS\] (Optional)
 
@@ -88,7 +88,7 @@ The following parameters can be used to configure the bot:
 | SERVER_USER                     | The username to display as user no. 1 in the server (aka "Observer")                                                                          |
 | MAX_HUNG_MINUTES                | The maximum amount in minutes the server is allowed to not respond to the bot until considered dead (default = 3). Set it to 0 to disable it. |
 | MESSAGE_PLAYER_USERNAME         | Message that a user gets when using line-feeds or carriage-returns in their names.                                                            |
-| MESSAGE_PLAYER_DEFAULT_USERNAME | Message that a user gets when being rejected because of a default player name (Player, Spieler, etc.).                                        |                                                                                                                                               |
+| MESSAGE_PLAYER_DEFAULT_USERNAME | Message that a user gets when being rejected because of a default player name (Player, Spieler, etc.).                                        |
 | MESSAGE_BAN                     | Message a banned user gets when being rejected.                                                                                               |
 | MESSAGE_AFK                     | Message for players that are kicked because of being AFK.                                                                                     |
 
@@ -108,15 +108,20 @@ If your directory is named `DCS` instead (stable version), just add these fields
 | MISSIONS_DIR               | (Optional) If you want to use a central missions directory for multiple servers, you can set it in here.                                                                                   |
 | PING_ADMIN_ON_CRASH        | Define if the role DCS Admin should be pinged when a server crash is being detected (default = true).                                                                                      |
 | START_MINIMIZED            | DCS will start minimized as default. You can disabled that by setting this value to false.                                                                                                 |
-| STATISTICS                 | If false, no statistics will be generated for this server. Default is true (see [Userstats](./plugins/userstats/README.md)).                                                               |
-| MISSION_STATISTICS         | If true, mission statistics will be generated for all missions loaded in this server (see [Missionstats](./plugins/missionstats/README.md)).                                               | 
+| STATISTICS                 | If false, no statistics will be generated for this server. Default is true (see [Userstats]).                                                                                              |
+| MISSION_STATISTICS         | If true, mission statistics will be generated for all missions loaded in this server (see [Missionstats]).                                                                                 |
 | DISPLAY_MISSION_STATISTICS | If true, the persistent mission stats embed is displayed in the servers stats channel (default = true).                                                                                    |
 | PERSIST_MISSION_STATISTICS | If true, player data is exported in the missionstats table (default = true).                                                                                                               |
 | PERSIST_AI_STATISTICS      | If true, AI data is exported, too (only player data otherwise), default = false.                                                                                                           |
-| COALITIONS                 | Enable coalition handling (see [Coalitions](./COALITIONS.md)), default = false.                                                                                                            |                                                                                                                                                                                                                                                                                                                                                 
-| ALLOW_PLAYERS_POOL         | Only for [Coalitions](./COALITIONS.md)                                                                                                                                                     |
-| COALITION_LOCK_TIME        | The time you are not allowed to change [coalitions](./COALITIONS.md) in the format "nn days" or "nn hours". Default is 1 day.                                                              |
-| Coalition Red              | Members of this role are part of the red coalition (see [Coalitions](./COALITIONS.md)).                                                                                                    |
-| Coalition Blue             | Members of this role are part of the blue coalition (see [Coalitions](./COALITIONS.md)).                                                                                                   |
-| COALITION_BLUE_CHANNEL     | Coalition channel for blue coalition (optional, see [Coalitions](./COALITIONS.md)).                                                                                                        |
-| COALITION_RED_CHANNEL      | Coalition channel for red coalition (optional, see [Coalitions](./COALITIONS.md)).                                                                                                         |
+| COALITIONS                 | Enable coalition handling (see [Coalitions]), default = false.                                                                                                                             |
+| ALLOW_PLAYERS_POOL         | Only for [Coalitions]                                                                                                                                                                      |
+| COALITION_LOCK_TIME        | The time you are not allowed to change [coalitions] in the format "nn days" or "nn hours". Default is 1 day.                                                                               |
+| Coalition Red              | Members of this role are part of the red coalition (see [Coalitions]).                                                                                                                     |
+| Coalition Blue             | Members of this role are part of the blue coalition (see [Coalitions]).                                                                                                                    |
+| COALITION_BLUE_CHANNEL     | Coalition channel for blue coalition (optional, see [Coalitions]).                                                                                                                         |
+| COALITION_RED_CHANNEL      | Coalition channel for red coalition (optional, see [Coalitions]).                                                                                                                          |
+
+[Coalition]: {% link configuration/coalitions.md %}
+[Userstats]: {% link plugins/userstats.md %}
+[Missionstats]: {% link plugins/missionstats.md %}
+[DCS_singleton]: https://wiki.hoggitworld.com/view/DCS_singleton_world

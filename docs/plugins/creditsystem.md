@@ -8,8 +8,8 @@ nav_order: 0
 
 This plugin adds credits to the bot. People can gain credits atm by killing stuff. It is planned to enhance this 
 further, by gaining credits by flighttimes, etc.<br/>
-Other plugins make use of credits. Currently, [SlotBlocking](../slotblocking/README.md) can block slots by credits and
-take credits away, if people waste airplanes. Furthermore, [Punishment](../punishment/README.md) can take credit points
+Other plugins make use of credits. Currently, [SlotBlocking] can block slots by credits and
+take credits away, if people waste airplanes. Furthermore, [Punishment] can take credit points
 away due to punishment points a player gets due to teamkills or the like.
 
 ## Configuration
@@ -56,7 +56,7 @@ If you use multiple entries for points_to_kill, please make sure, that you order
 That means, in the above example you need to specify the plane with the unit_type first, then the planes without.
 So this list will be evaluated **exactly in the order the items are listed** and the first match will count! 
 
-To enable the points system, you need to start a "Campaign" on the specific server (see [Gamemaster](../gamemaster/README.md)).
+To enable the points system, you need to start a "Campaign" on the specific server (see [Gamemaster]).
 Same is true for achievements, where you can give your players Discord roles depending on either the time they were 
 flying in that specific campaign or on the points they achieved. Losing points might downgrade the player again.
 
@@ -95,3 +95,7 @@ If you want to change user points based on any mission achievements, you are goo
 | #campaign_id | SERIAL                     | ID of this campaign.              |
 | #player_ucid | TEXT NOT NULL              | The UCID of the player            |
 | points       | INTEGER NOT NULL DEFAULT 0 | The earned credits of this player |
+
+[SlotBlocking]: {% link plugins/slotblocking.md %}
+[Punishment]: {% link plugins/punishment.md %}
+[Gamemaster]: {% link plugins/gamemaster.md %}
