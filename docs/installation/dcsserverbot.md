@@ -32,7 +32,7 @@ Then run the provided install script:
 - The script will create a [virtual environment] in the subfolder `venv`
     - This will isolate the dependencies and avoids problems with other Python applications
 - All needed requirements will be installed in this venv automatically.
-    - If you want to know the needed libs take a look at `requirements.txt`
+    - If you want to know the needed modules take a look at `requirements.txt`
 - After that `install.py` will be started with this virtual environmant.
 
 The install script will execute the following steps:

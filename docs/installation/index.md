@@ -8,7 +8,7 @@ nav_order: 2
 In order to use DCSServerBot you need to install the following prerequisites:
 
 - [Python] version 3.9 or higher
-  - Some modules (see `requirements.txt`)
+  - Some modules (see `requirements.txt`) will be installed automatically
 - [PostgreSQL] server version 14 or higher
 - [Git] (optional for auto-update)
 

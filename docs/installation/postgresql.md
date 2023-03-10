@@ -11,7 +11,7 @@ Therefor, it needs a fast database. Starting with SQLite back in the days, I dec
 > If you don't want to install and maintain a [PostgreSQL] server, take a look at [DCSServerBotLight], which doesn't need a PostgreSQL-database, but has a limited feature set.
 
 Just download and install [PostgreSQL] from the website (current version at the time of writing is 14, but will run with any newer version than that, too).
-Or you can use a package manager of your choice [Winget] / [Chocolaty]:
+Or you can use a package manager of your choice like [Winget] or [Chocolaty]:
 - `choco install postgresql`
 - `winget install postgresql`
 
@@ -20,7 +20,9 @@ You just give it the postgres user and password and it will create the database 
 
 # Remote database server
 
-It is possible to use an already existing databse server on another machine. But you need to create the database `dcsserverbot` and user `dcsserverbot` manually.
+It is possible to use an already existing databse server on another machine. But you need to create the database and user manually.
+The default names of both is `dcsserverbot`. But you can choose other names if you want or if you are forced to do it.
+Give the user full rights to the database.
 Configure the needed option `DATABASE_URL` in the `dcsserverbot.ini`. On startup the bot will create all tables that are needed.
 
 {: .warning }
@@ -31,3 +33,5 @@ Configure the needed option `DATABASE_URL` in the `dcsserverbot.ini`. On startup
 
 [DCSServerBotLight]: https://github.com/Special-K-s-Flightsim-Bots/DCSServerBotLight
 [PostgreSQL]: https://www.postgresql.org/
+[Chocolaty]: https://chocolatey.org/
+[Winget]: https://learn.microsoft.com/en-us/windows/package-manager/winget/
