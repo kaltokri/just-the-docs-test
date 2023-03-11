@@ -13,7 +13,9 @@ So you can hop in another plane, as soon as you have killed a specific number of
 are not counted._
 
 ## Configuration
+
 The slot blocking is configured with a file named config\slotblocking.json. You'll find a sample file in that directory:
+
 ```json
 {
   "configs": [

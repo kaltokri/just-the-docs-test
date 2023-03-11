@@ -234,7 +234,7 @@ The following environment variables can be used in the "run" command:
 
 ## Discord Commands
 
-If a server gets started or stopped manually (using .startup / .shutdown), it will be put in "maintenance" mode.
+If a server gets started or stopped manually (using `.startup` / `.shutdown`), it will be put in "maintenance" mode.
 To clear this and give the control back to the scheduler, use the following command.
 
 | Command      | Parameter | Channel       | Role      | Description                                                                                                                                   |

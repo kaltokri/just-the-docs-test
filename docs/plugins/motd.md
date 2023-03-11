@@ -41,10 +41,12 @@ To be able to create a message on "birth", `MISSION_STATISTICS = true` has to be
   ]
 }
 ```
+
 recipients can be a list of Discord groups that the player either is part of or not (!).
 !@everyone means, this message is for people that are not a member of your Discord only.
 
 ### Optional Nudge Layout for multiple Recipient Groups
+
 ```json
       "nudge": {
         "delay": 60,

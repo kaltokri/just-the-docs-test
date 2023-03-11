@@ -121,7 +121,9 @@ To use the penalty system inside of missions, you can use the commands:
 ]]--
 dcsbot.punish(eventName, initiator, target)
 ```
+
 Following the example above, a possible call could be:
+
 ```lua
 [...]
     if condition then
