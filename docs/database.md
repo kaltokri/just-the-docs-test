@@ -192,11 +192,11 @@ Plugin: [UserStats]
 | #hop_on            | TIMESTAMP NOT NULL  | Time the player occupied this unit.                                                                                           |
 | hop_off            | TIMESTAMP           | Time, the player left this unit or the server.                                                                                |
 
-[Admin]: {% link plugins/admin.md %}
-[CreditSystem]: {% link plugins/creditsystem.md %}
-[GameMaster]: {% link plugins/gamemaster.md %}
-[Mission]: {% link plugins/mission.md %}
-[MissionStats]: {% link plugins/missionstats.md %}
-[Punishment]: {% link plugins/punishment.md %}
-[ServerStats]: {% link plugins/serverstats.md %}
-[UserStats]: {% link plugins/userstats.md %}
+[Admin]: plugins/admin.md
+[CreditSystem]: plugins/creditsystem.md
+[GameMaster]: plugins/gamemaster.md
+[Mission]: plugins/mission.md
+[MissionStats]: plugins/missionstats.md
+[Punishment]: plugins/punishment.md
+[ServerStats]: plugins/serverstats.md
+[UserStats]: plugins/userstats.md

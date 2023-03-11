@@ -88,9 +88,8 @@ If you want to change user points based on any mission achievements, you are goo
 
 ## Database Tables
 
-{% capture link_with_anchor %}{% link database.md %}#credits{% endcapture %}
-- [CREDITS]({{ link_with_anchor }})
+- [CREDITS](../database.md#credits)
 
-[SlotBlocking]: {% link plugins/slotblocking.md %}
-[Punishment]: {% link plugins/punishment.md %}
-[Gamemaster]: {% link plugins/gamemaster.md %}
+[SlotBlocking]: slotblocking.md
+[Punishment]: punishment.md
+[Gamemaster]: gamemaster.md

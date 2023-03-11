@@ -91,5 +91,4 @@ dcsserverbot.ini. **All changes will happen on the bot that is controlling the s
 
 ## Database Tables
 
-{% capture link_with_anchor %}{% link database.md %}#bans{% endcapture %}
-- [BANS]({{ link_with_anchor }})
+- [BANS](../database.md#bans)

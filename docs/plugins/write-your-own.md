@@ -465,6 +465,6 @@ Each Plugin can implement the method
 ```
 that will take care of anything that needs to be done when migrating **TO** version _version_. 
 
-[Punishment]: {% link plugins/punishment.md %}
+[Punishment]: punishment.md
 [discord.py]: https://discordpy.readthedocs.io/en/stable/
-[Report Framework]: {% link reports/index.md %}
+[Report Framework]: ../reports/index.md

@@ -121,7 +121,7 @@ If your directory is named `DCS` instead (stable version), just add these fields
 | COALITION_BLUE_CHANNEL     | Coalition channel for blue coalition (optional, see [Coalitions]).                                                                                                                         |
 | COALITION_RED_CHANNEL      | Coalition channel for red coalition (optional, see [Coalitions]).                                                                                                                          |
 
-[Coalition]: {% link configuration/coalitions.md %}
-[Userstats]: {% link plugins/userstats.md %}
-[Missionstats]: {% link plugins/missionstats.md %}
+[Coalitions]: coalitions.md
+[Userstats]: ../plugins/userstats.md
+[Missionstats]: ../plugins/missionstats.md
 [DCS_singleton]: https://wiki.hoggitworld.com/view/DCS_singleton_world

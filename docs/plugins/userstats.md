@@ -62,7 +62,6 @@ Well, then - just disable them from inside your mission:
 
 ## Database Tables
 
-{% capture link_with_anchor %}{% link database.md %}#statistics{% endcapture %}
-- [STATISTICS]({{ link_with_anchor }})
+- [STATISTICS](../database.md#statistics)
 
-[Server Specific Sections]: {% link configuration/dcsserverbot-ini.md %}
+[Server Specific Sections]: ../configuration/dcsserverbot-ini.md

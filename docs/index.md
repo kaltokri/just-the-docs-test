@@ -64,4 +64,4 @@ This documentation will show you the main features, how to install and configure
 [OvGME]: https://github.com/mguegan/ovgme
 [FunkMan]: https://github.com/funkyfranky/FunkMan
 [Git]: https://git-scm.com/download/win
-[coalitions]: {% link configuration/coalitions.md %}
+[coalitions]: configuration/coalitions.md

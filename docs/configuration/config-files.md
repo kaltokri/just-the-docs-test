@@ -77,4 +77,4 @@ With the OvGME plugin you can install OvGME like packages automatically into you
 possible ways, by either providing a strict version (2.0.1) or by using the term "latest", to get the latest available
 version that is provided in one of the installation directories.
 
-[plugin documentation]: {% link plugins/scheduler.md %}
+[plugin documentation]: ../plugins/scheduler.md

@@ -19,4 +19,4 @@ configuration file. If you want to add multiple groups, separate them by comma (
 | Coalition Blue | People with this role are members of the blue coalition (see [Coalitions]).                                                                         |
 | Coalition Red  | People with this role are members of the red coalition (see [Coalitions]).                                                                          |
 
-[Coalition]: {% link configuration/coalitions.md %}
+[Coalitions]: coalitions.md

@@ -39,9 +39,6 @@ folder of your DCS-server (for instance via a Google Drive) will be auto-added t
 
 ## Database Tables
 
-{% capture link_with_anchor %}{% link database.md %}#players{% endcapture %}
-- [PLAYERS]({{ link_with_anchor }})
-{% capture link_with_anchor %}{% link database.md %}#players_hist{% endcapture %}
-- [PLAYERS_HIST]({{ link_with_anchor }})
-{% capture link_with_anchor %}{% link database.md %}#missions{% endcapture %}
-- [MISSIONS]({{ link_with_anchor }})
+- [PLAYERS](../database.md#players)
+- [PLAYERS_HIST](../database.md#players_hist)
+- [MISSIONS](../database.md#missions)

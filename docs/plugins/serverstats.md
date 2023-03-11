@@ -21,5 +21,4 @@ n/a
 
 ## Database Tables
 
-{% capture link_with_anchor %}{% link database.md %}#serverstats{% endcapture %}
-- [SERVERSTATS]({{ link_with_anchor }})
+- [SERVERSTATS](../database.md#serverstats)

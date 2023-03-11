@@ -152,5 +152,5 @@ you can select another slot.
 }
 ```
 
-[CreditSystem]: {% link plugins/creditsystem.md %}
+[CreditSystem]: creditsystem.md
 [pattern]: https://riptutorial.com/lua/example/20315/lua-pattern-matching

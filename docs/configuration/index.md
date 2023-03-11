@@ -16,5 +16,5 @@ A special feature is the [Coalition] mode. Read details about it here in the mat
 
 To view some sample configurations for the bot or for each configurable plugin, take a look at [Sample Files].
 
-[Sample Files]: {% link configuration/config-files.md %}
-[Coalition]: {% link configuration/coalitions.md %}
+[Sample Files]: config-files.md
+[Coalition]: coalitions.md
