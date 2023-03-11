@@ -45,7 +45,7 @@ A campaign name of "_internal_" will be used in that case.
 
 ## Database Tables
 
-{% capture link_with_anchor %}{% link database/index.md %}#campaigns{% endcapture %}
+{% capture link_with_anchor %}{% link database.md %}#campaigns{% endcapture %}
 - [CAMPAIGNS]({{ link_with_anchor }})
-{% capture link_with_anchor %}{% link database/index.md %}#coalitions{% endcapture %}
+{% capture link_with_anchor %}{% link database.md %}#coalitions{% endcapture %}
 - [COALITIONS]({{ link_with_anchor }})

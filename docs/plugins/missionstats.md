@@ -42,7 +42,7 @@ To disable mission statistics for a specific mission, you can use the following 
 
 ## Database Tables
 
-{% capture link_with_anchor %}{% link database/index.md %}#missionstats{% endcapture %}
+{% capture link_with_anchor %}{% link database.md %}#missionstats{% endcapture %}
 - [MISSIONSTATS]({{ link_with_anchor }})
 
 [Server Specific Sections]: {% link configuration/dcsserverbot-ini.md %}

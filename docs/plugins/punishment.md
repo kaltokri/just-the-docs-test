@@ -133,7 +133,7 @@ Following the example above, a possible call could be:
 
 ## Database Tables
 
-{% capture link_with_anchor %}{% link database/index.md %}#pu_events{% endcapture %}
+{% capture link_with_anchor %}{% link database.md %}#pu_events{% endcapture %}
 - [PU_EVENTS]({{ link_with_anchor }})
 
 [SLMod]: https://github.com/mrSkortch/DCS-SLmod
