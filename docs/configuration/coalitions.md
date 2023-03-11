@@ -12,14 +12,15 @@ about it. It has redundant information in it, which is usually a bad idea, but I
 guys to have everything in one place.<br/>
 Coalitions are implemented by slot blocking, but can use the recenly added feature of coalition passwords in DCS, too.
 
-**ATTENTION!**</BR>
-With COALITIONS enabled, some persistent displays will not appear in your server status channels (or will be changed)
-like Player information or Mission Statistics, which would render all the work useless, if you could peek in there and 
-see what is going on. You can still use the commands .players or .missionstats in your dedicated coalition channels, but
-you can't see data from the opposite coalition anymore.
+{: .note }
+> With COALITIONS enabled, some persistent displays will not appear in your server status channels (or will be changed)
+> like Player information or Mission Statistics, which would render all the work useless, if you could peek in there and
+> see what is going on. You can still use the commands .players or .missionstats in your dedicated coalition channels, but
+> you can't see data from the opposite coalition anymore.
 
-COALITION handling can be enabled in each server individually. So if you only want to enable strict red/blue 
-handling in one server, you can do that. Every other server (and their persistent embeds) will not be affected.  
+The option `COALITION` to handle this feature can be enabled in each server section of `dcsserverbot.ini` individually.
+So if you only want to enable strict red/blue handling in one server, you can do that.
+Every other server (and their persistent embeds) will not be affected.
 
 ---
 ## Bot Configuration
@@ -31,7 +32,7 @@ a) __BOT Section__
 |----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | GREETING_DM          | A greeting message, that people will receive as a DM in Discord, if they join your guild.                                                                                                                                                                                                                                                                                                                            |
 
-A GREETING_DM is not mandatory and not linked to coalitions, but it is recommended to tell your new joiners to join a
+A `GREETING_DM` is not mandatory and not linked to coalitions, but it is recommended to tell your new joiners to join a
 coalition. I have provided a sample message that you can adapt or use as it is.
 
 b) __ROLES Section__
@@ -52,11 +53,11 @@ c) __Server Specific Sections__
 | COALITION_BLUE_CHANNEL | Coalition channel for blue coalition.                                                                      |
 | COALITION_RED_CHANNEL  | Coalition channel for red coalition.                                                                       |
 
-**Attention!**<br/>
-Make sure, that all channels for red and blue coalitions have read access **only** for this coalition and not for 
-everyone and not for the other coalition! The CHAT-channels for red and blue are similar to the general chat channel, 
-but they only replicate chat messages that are being sent to that specific coalition in game.
-Unfortunately, it is not possible to chat back yet, as the DCS API doesn't allow it (or I am too dumb to use it).
+{: .warning }
+> Make sure, that all channels for red and blue coalitions have read access **only** for this coalition and not for
+> everyone and not for the other coalition! The CHAT-channels for red and blue are similar to the general chat channel,
+> but they only replicate chat messages that are being sent to that specific coalition in game.
+> Unfortunately, it is not possible to chat back yet, as the DCS API doesn't allow it (or I am too dumb to use it).
 
 
 ## Discord Configuration

@@ -9,7 +9,14 @@ nav_order: 0
 This plugin is a very low level plugin that lets you start commands on the server PC and map them to discord commands. 
 It can be used to start specific tasks like backups or other game servers with DCSServerBot.
 
+{: .warning }
+> DCSServerBot needs to have the permissions to launch the respective executable!
+
+{: .important }
+> Do not run long running shell scripts!
+
 ## Configuration
+
 Each command has a name and parameters. These parameters can be used in the arguments you use to call your external 
 program. The sample shows how to launch DCS from a specific command (not really useful as you have .startup, but you
 get the idea) and dir as a shell command. 
@@ -40,6 +47,3 @@ get the idea) and dir as a shell command.
   ]
 }
 ```
-**Attention:**<br/>
-* DCSServerBot needs to have the permissions to launch the respective executable!
-* Do not run long running shell scripts!

@@ -94,4 +94,5 @@ async def test(self, ctx, period: Optional[str] = None, server_name: Optional[st
 
 Whenever you call ```.test```, you will not generate a new report but update the existing one.
 
-__Attention__: The key is unique in that server. You must not use the same key for two different reports, they will replace each other otherwise.
+{: .warning }
+> The key is unique in that server. You must not use the same key for two different reports, they will replace each other otherwise.

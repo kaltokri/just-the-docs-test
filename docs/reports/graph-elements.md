@@ -23,7 +23,9 @@ To display nice graphics like bar-charts or pie-charts, you need to wrap them in
   }      
 ]
 ```
-__Attention:__ Only one Graph element per report is allowed.
+
+{: .note }
+> Only one Graph element per report is allowed.
 
 Each sub-element has at least the following parameters:
 

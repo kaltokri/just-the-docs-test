@@ -62,10 +62,10 @@ in your Plugin implementation or
 
 in your EventListener implementation.
 
-**__Attention:__**<br/>
-The default configuration will be merged with the respective server specific configuration, giving the
-server specific configuration the priority over the default. If you don't want it like that, you need to
-overwrite the `get_config()` method in your own plugin configuration (see [Punishment]).
+{: .note }
+> The default configuration will be merged with the respective server specific configuration, giving the
+> server specific configuration the priority over the default. If you don't want it like that, you need to
+> overwrite the `get_config()` method in your own plugin configuration (see [Punishment]).
 
 
 ## Classes

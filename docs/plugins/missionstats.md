@@ -17,15 +17,17 @@ Missionstats needs the Userstats plugin to be loaded first.
 
 ## How to disable Missionstats inside of missions
 
-To disable mission statistics for a specific mission, you can use the following piece of code somewhere in your mission 
+To disable mission statistics for a specific mission, you can use the following piece of code somewhere in your mission
 (not in an on-startup trigger, but shortly after).
+
 ```lua
   dcsbot.disableMissionStats()
 ```
 
 ## Discord Commands
 
-**Attention:** These commands need MISSION_STATISTICS=true in the server you want to run the commands on!
+{: .note }
+> These commands need `MISSION_STATISTICS=true` in the server you want to run the commands on!
 
 
 | Command                   | Parameter                        | Channel                     | Role | Description                                                                                       |
@@ -35,7 +37,8 @@ To disable mission statistics for a specific mission, you can use the following 
 | .modulestats / .modstats  | [@member / Player Name] [period] | all                         | DCS  | Display module and weapon statistics per module.                                                  |
 | .refuelings / .refuel     | [@member / Player Name] [period] | all                         | DCS  | Display refuelings per module.                                                                    |
 
-**Attention:** "period" can either be a period [day, week, month, year] or a campaign name!
+{: .note }
+> "period" can either be a period [day, week, month, year] or a campaign name!
 
 ## Tables
 

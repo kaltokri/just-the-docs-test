@@ -25,4 +25,6 @@ def setup(bot: DCSServerBot):
     bot.add_cog(Test(bot))
 ```
 
-__Attention__: If your reports contain graphs, the created image will be returned in env.filename. You need to take care of wrapping the in a discord.File and deleting the file after it has been displayed. 
+{: .note }
+> If your reports contain graphs, the created image will be returned in `env.filename`.
+> You need to take care of wrapping the in a `discord.File` and deleting the file after it has been displayed.

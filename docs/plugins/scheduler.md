@@ -127,7 +127,10 @@ Examples:
 ### Section "preset"
 
 Weather presets can be combined by comma separating them in the appropriate server configuration. You can either create
-full-fledged weather presets already and load them later or you combine them like in the example above. 
+full-fledged weather presets already and load them later or you combine them like in the example above.
+
+{: .important }
+> If using the presets / settings, your missions will be amended automatically by the bot. You might want to create safety copies upfront.
 
 | Parameter            | Description                                                                                                               |
 |----------------------|---------------------------------------------------------------------------------------------------------------------------|
@@ -195,9 +198,6 @@ it in the default section.
 | populated        | If **false**, the mission will be restarted / rotated only, if no player is in (default: true).                                                                                                                                                                                                                            |
 | settings         | Timeframes in which a weather preset is valid or a list of presets that should change randomly. If not provided, the mission will run as is. Presets can be stacked by comma-separating them.                                                                                                                              |
 | mission_end      | Only apply the method on mission end (usually in combination with restart_with_shutdown).                                                                                                                                                                                                                                  |
-
-**Attention!**<br/>
-If using the presets / settings, your missions will be amended automatically by the bot. You might want to create safety copies upfront.
 
 ### on-commands
 

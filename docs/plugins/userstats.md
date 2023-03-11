@@ -36,9 +36,8 @@ If the AUTOMATCH is disabled or was not successful, users can generate a unique 
 | .reset_statistics      |                                           | all     | Admin     | Resets the statistics for this server.                                                              |
 | .linkme                |                                           | all     | DCS       | Link a discord user to a DCS user (user self-service).                                              |
 
-**ATTENTION**:<br/>
-If a campaign is active on your server, .stats and .highscore will display the data of that campaign only, unless you use
-the "all" period.
+{: .note }
+> If a campaign is active on your server, `.stats` and `.highscore` will display the data of that campaign only, unless you use the "all" period.
 
 ## Reports
 

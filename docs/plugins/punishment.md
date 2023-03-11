@@ -66,7 +66,9 @@ You can add own events that you can use from inside the mission environment (see
 If you use the inline "action"-element, you can already trigger any action like a "move_to_spec" or "credits" when someone
 FFs or kills a team member.
 
-**ATTENTION:** Multiple events, that happen inbetween a minute, are calculated as a single event. This is on purpose, to avoid too many punishments when a user unintentionally dropped a CBU onto something.
+{: .note }
+> Multiple events, that happen inbetween a minute, are calculated as a single event. This is on purpose, to avoid too many punishments when a user
+> unintentionally dropped a CBU onto something.
 
 ### Punishments
 
@@ -109,7 +111,8 @@ Decay can only be configured once, so there is no need for a server specific con
 
 ## How to use the penalty system inside of missions
 
-To use the penalty system inside of missions, you can use the commands
+To use the penalty system inside of missions, you can use the commands:
+
 ```lua
 --[[
     eventName, the event according to the penalties table
