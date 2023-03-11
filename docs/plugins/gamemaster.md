@@ -43,24 +43,9 @@ to put in the following lines in one of your triggers that fire after a mission 
 This can for instance be used for some arena based game, which should start all over again after being restarted.
 A campaign name of "_internal_" will be used in that case.
 
-## Tables
+## Database Tables
 
-### CAMPAIGNS
-
-| Column      | Type                    | Description                                     |
-|-------------|-------------------------|-------------------------------------------------|
-| #id         | SERIAL                  | Auto-incrementing unique ID of this campaign.   |
-| name        | TEXT NOT NULL           | The campaign name.                              |
-| description | TEXT                    | A brief description about the campaign.         |
-| server_name | TEXT NOT NULL           | The server name the campaign is valid for.      |
-| start       | TIMESTAMP DEFAULT NOW() | The start-time of the campaign (default = now). |
-| stop        | TIMESTAMP               | When will the campaign stop.                    |
-
-### COALITIONS
-
-| Column          | Type                    | Description                                     |
-|-----------------|-------------------------|-------------------------------------------------|
-| #server_name    | TEXT NOT NULL           | The respective server name.                     |
-| #player_ucid    | TEXT NOT NULL           | The players UCID.                               |
-| coalition       | TEXT                    | "red", "blue" or empty.                         |
-| coalition_leave | TIMESTAMP               | Time when the last coalition was left.          |
+{% capture link_with_anchor %}{% link database/index.md %}#campaigns{% endcapture %}
+- [CAMPAIGNS]({{ link_with_anchor }})
+{% capture link_with_anchor %}{% link database/index.md %}#coalitions{% endcapture %}
+- [COALITIONS]({{ link_with_anchor }})

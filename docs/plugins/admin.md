@@ -89,13 +89,7 @@ can be uploaded in the admin channels by a user belonging to the Admin group. Th
 the dedicated plugin will be reloaded or the bot will be restarted (security question applies), if you update the 
 dcsserverbot.ini. **All changes will happen on the bot that is controlling the server of that admin channel!**
 
-## Tables
+## Database Tables
 
-### Bans
-
-| Column    | Type                             | Description                                          |
-|-----------|----------------------------------|------------------------------------------------------|
-| #ucid     | TEXT NOT NULL                    | Unique ID of this player. FK to the players table.   |
-| banned_by | TEXT NOT NULL                    | User name that banned or DCSServerBot for auto bans. |
-| reason    | TEXT                             | Reason for the ban.                                  |
-| banned_at | TIMESTAMP NOT NULL DEFAULT NOW() | When was that user banned.                           |
+{% capture link_with_anchor %}{% link database/index.md %}#bans{% endcapture %}
+- [BANS]({{ link_with_anchor }})

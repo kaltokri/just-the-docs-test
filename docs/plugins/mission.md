@@ -37,43 +37,11 @@ folder of your DCS-server (for instance via a Google Drive) will be auto-added t
 | .briefing/.brief |                          | all                         | DCS                   | Shows the description / briefing of the running mission.                                                                 |
 | .atis / .weather | Airport Name             | all                         | DCS                   | Information about a specific airport in this mission (incl. weather).                                                    |
 
-## Tables
+## Database Tables
 
-### Players
-
-| Column          | Type                  | Description                                              |
-|-----------------|-----------------------|----------------------------------------------------------|
-| #ucid           | TEXT                  | Unique ID of this user (DCS ID).                         |
-| discord_id      | BIGINT                | Discord ID of this user (if matched) or -1 otherwise.    |
-| name            | TEXT                  | Last used DCS in-game-name of this user.                 |
-| ipaddr          | TEXT                  | Last used IP-address of this user.                       |
-| coalition       | TEXT                  | The coalition the user belongs to.                       |
-| coalition_leave | TIMESTAMP             | The time that user last left their coalition.            |
-| manual          | BOOLEAN DEFAULT FALSE | True if this user was manually matched, FALSE otherwise. |
-| last_seen       | TIMESTAMP             | Time the user was last seen on the DCS servers.          |
-
-### Players_Hist
-
-This table keeps a history of all changes to the main player table.
-
-| Column     | Type                    | Description                                              |
-|------------|-------------------------|----------------------------------------------------------|
-| #id        | NUMBER                  | Unique ID (sequence)                                     |
-| ucid       | TEXT                    | Unique ID of this user (DCS ID).                         |
-| discord_id | BIGINT                  | Discord ID of this user (if matched) or -1 otherwise.    |
-| name       | TEXT                    | Last used DCS in-game-name of this user.                 |
-| ipaddr     | TEXT                    | Last used IP-address of this user.                       |
-| coalition  | TEXT                    | The coalition the user belongs to.                       |
-| manual     | BOOLEAN                 | True if this user was manually matched, FALSE otherwise. |
-| time       | TIMESTAMP DEFAULT NOW() | Time of the change.                                      |
-
-### Missions
-
-| Column          | Type               | Description                                     |
-|-----------------|--------------------|-------------------------------------------------|
-| #id             | SERIAL             | Auto-incrementing unique mission ID.            |
-| server_name     | TEXT NOT NULL      | The name of the DCS server this mission was on. |
-| mission_name    | TEXT NOT NULL      | The name of the mission.                        |
-| mission_theatre | TEXT NOT NULL      | The map being used by the mission.              |
-| mission_start   | TIMESTAMP NOT NULL | When was this mission started.                  |
-| mission_end     | TIMESTAMP          | When was this mission stopped.                  |
+{% capture link_with_anchor %}{% link database/index.md %}#players{% endcapture %}
+- [PLAYERS]({{ link_with_anchor }})
+{% capture link_with_anchor %}{% link database/index.md %}#players_hist{% endcapture %}
+- [PLAYERS_HIST]({{ link_with_anchor }})
+{% capture link_with_anchor %}{% link database/index.md %}#missions{% endcapture %}
+- [MISSIONS]({{ link_with_anchor }})

@@ -240,7 +240,7 @@ To clear this and give the control back to the scheduler, use the following comm
 | Command      | Parameter | Channel       | Role      | Description                                                                                                                                   |
 |--------------|-----------|---------------|-----------|-----------------------------------------------------------------------------------------------------------------------------------------------|
 | .startup     |           | admin-channel | DCS Admin | Starts a dedicated DCS server process.                                                                                                        |
-| .shutdown    | [-force]  | admin-channel | DCS Admin | Shuts the dedicated DCS server process down.<br/>If -force is used, no player check will be executed and no onShutdown command will be run.   |
+| .shutdown    | [-force]  | admin-channel | DCS Admin | Shuts the dedicated DCS server process down.<br/>If `-force` is used, no player check will be executed and no onShutdown command will be run.   |
 | .start       |           | admin-channel | DCS Admin | Starts a stopped DCS server.                                                                                                                  |
 | .stop        |           | admin-channel | DCS Admin | Stops a DCS server.                                                                                                                           |
 | .status      |           | all           | DCS       | Shows the status of all configured DCS servers.                                                                                               |

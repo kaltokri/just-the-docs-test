@@ -12,7 +12,7 @@ This plugin adds a message of the day to the server, that is displayed either on
 The plugin is configured via JSON, as many others. If you don't generate your custom json file (sample available in the 
 config directory), the plugin will not generate any messages.
 
-To be able to create a message on "birth", MISSION_STATISTICS = true has to be enabled on your server.
+To be able to create a message on "birth", `MISSION_STATISTICS = true` has to be enabled on your `dcsserverbot.ini`.
 
 ```json
 {

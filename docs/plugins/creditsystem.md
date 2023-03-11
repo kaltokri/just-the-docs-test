@@ -86,15 +86,10 @@ If you want to change user points based on any mission achievements, you are goo
   dcsbot.addUserPoints('Special K', 10) -- add 10 points to users "Special K"'s credits. Points can be negative to take them away.
 ```
 
-## Tables
+## Database Tables
 
-### CREDITS
-
-| Column       | Type                       | Description                       |
-|--------------|----------------------------|-----------------------------------|
-| #campaign_id | SERIAL                     | ID of this campaign.              |
-| #player_ucid | TEXT NOT NULL              | The UCID of the player            |
-| points       | INTEGER NOT NULL DEFAULT 0 | The earned credits of this player |
+{% capture link_with_anchor %}{% link database/index.md %}#credits{% endcapture %}
+- [CREDITS]({{ link_with_anchor }})
 
 [SlotBlocking]: {% link plugins/slotblocking.md %}
 [Punishment]: {% link plugins/punishment.md %}
